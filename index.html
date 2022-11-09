@@ -19,8 +19,19 @@
 <body>
     <header>
         <nav>
-            <h1 class="logo">Isra<span>QuirozZ</span></h1>
-            <ul>
+            <a class="logo1" href="#">
+                <h2>Isra<span>QuirozZ</span></h2>
+            </a>
+            <a class="logo2" href="#">
+                <h2>I<span>QzZ</span></h2>
+            </a>
+            <button class="openMenu">
+          <i class="fa-regular fa-bars"></i>
+        </button>
+            <button class="closeMenu">
+          <i class="fa-regular fa-xmark"></i>
+        </button>
+            <ul class="menuItems">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">PROJECTS</a></li>
@@ -29,6 +40,46 @@
             </ul>
         </nav>
     </header>
+
+    <section class="home">
+        <div class="home_left">
+            <h3>Hello! my name is</h3>
+            <h1>Israel <span>QuirozZ</span></h1>
+            <!-- Animar -->
+            <h2>I'm a Frontend Web Developer</h2>
+            <button class="btn">Contact Me</button>
+        </div>
+        <div class="home_right">
+            <!-- <img width="300px" src="./img/neon-circle.png" alt="Circle" /> -->
+            <div class="circle">
+                <h2>Create your own reality</h2>
+            </div>
+        </div>
+        <button class="btn scrollBtn">
+        <i class="fa-solid fa-angles-down"></i>
+      </button>
+    </section>
+
+    <section class="about">
+        <h2>About</h2>
+    </section>
+
+    <script>
+        const openMenu = document.querySelector(".openMenu");
+        const closeMenu = document.querySelector(".closeMenu");
+        const menuItems = document.querySelector(".menuItems");
+        openMenu.addEventListener("click", () => {
+            openMenu.classList.toggle("hidden");
+            closeMenu.classList.toggle("visible");
+            menuItems.classList.toggle("visible_nav");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            closeMenu.classList.toggle("visible");
+            openMenu.classList.toggle("hidden");
+            menuItems.classList.toggle("visible_nav");
+        });
+    </script>
 </body>
 
 </html>
