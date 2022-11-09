@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: var(--fuenteP);
+}
+
+:root {
+    --fuenteP: "Fredoka", sans-serif;
+    --fuenteS: "Quicksand", sans-serif;
+    --colorP: #32e0c4;
+    --colorS: #c4acd1;
+    --dark: rgba(0, 0, 0, 0.8);
+    --light: rgba(255, 255, 255, 0.3);
+}
+
+nav {}
