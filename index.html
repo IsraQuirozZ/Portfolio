@@ -19,10 +19,10 @@
 <body>
     <header>
         <nav>
-            <a class="logo1" href="#">
+            <a class="logo1" href="home">
                 <h2>Isra<span>QuirozZ</span></h2>
             </a>
-            <a class="logo2" href="#">
+            <a class="logo2" href="home">
                 <h2>I<span>QzZ</span></h2>
             </a>
             <button class="openMenu">
@@ -32,8 +32,8 @@
           <i class="fa-regular fa-xmark"></i>
         </button>
             <ul class="menuItems">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li><a href="#">PROJECTS</a></li>
                 <li><a href="#">CONTACT</a></li>
                 <li><a href="#">CV</a></li>
@@ -41,7 +41,7 @@
         </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home_left">
             <h3>Hello! my name is</h3>
             <h1>Israel <span>QuirozZ</span></h1>
@@ -50,19 +50,107 @@
             <button class="btn">Contact Me</button>
         </div>
         <div class="home_right">
-            <!-- <img width="300px" src="./img/neon-circle.png" alt="Circle" /> -->
             <div class="circle">
                 <h2>Create your own reality</h2>
             </div>
         </div>
-        <button class="btn scrollBtn">
-        <i class="fa-solid fa-angles-down"></i>
-      </button>
+        <a href="#about"><button class="btn scrollBtn">
+          <i class="fa-solid fa-angles-down"></i></button
+      ></a>
     </section>
 
-    <section class="about">
-        <h2>About</h2>
-    </section>
+    <div class="portfolioBg">
+        <section class="about" id="about">
+            <div class="about_left">
+                <img class="profileImg about_hidden" src="./img/Personal.png" alt="Me" />
+                <div class="about_left__container">
+                    <div class="education_leftContent">
+                        <h2>Certificates</h2>
+                        <div class="carrousel">
+                            <img class="carrousel_img" src="./img/prueba certificado.png" alt="" />
+                        </div>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill_leftContent about_hidden">
+                        <h2>Soft <span>Skills</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="about_right">
+                <h1>ABOUT ME</h1>
+                <ul>
+                    <li>
+                        <a href="#" class="profile">Profile</a>
+                    </li>
+                    <li><a href="#" class="education active">Education</a></li>
+                    <li><a href="#" class="skills">Skills</a></li>
+                </ul>
+                <div class="profileContent about_hidden">
+                    <p>
+                        I’m a mechatronics engineering student, and a
+                        <span>Front-End Developer</span> with more than a year of experience in the field, I’m currently taking a Fullstack Development bootcamp to lead my developer career to the next level. I'm in constantly learning.
+                    </p>
+                    <p>Student at CoderHouse 🚀</p>
+                    <p>
+                        I'll be happy to help you, if you need anything, please let me know.
+                    </p>
+                    <div class="profileBtns">
+                        <button class="btn">Get In Touch</button>
+                        <button class="btn">View CV</button>
+                    </div>
+                </div>
+
+                <div class="educationContent about_hidden">
+                    <p>Mechatronic Engineering (2022 - XXXX)</p>
+                    <ul>
+                        <li>UPM - Universidad Politécnica de Madrid</li>
+                    </ul>
+                    <p>CoderHouse</p>
+                    <ul>
+                        <li>Fullstack Web Development career</li>
+                        <li>UI/UX Career</li>
+                        <li>Web Development Course</li>
+                    </ul>
+                    <p>Udemy</p>
+                    <ul>
+                        <li>Web Development Bootcamp</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skillsContent">
+                    <div class="skillItem">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skillItem">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skillItem">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JAVASCRIPT</p>
+                    </div>
+                    <div class="skillItem">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <p>BOOTSTRAP</p>
+                    </div>
+                    <div class="skillItem">
+                        <i class="fa-brands fa-sass"></i>
+                        <p>SASS</p>
+                    </div>
+                    <div class="skillItem">
+                        <i class="fa-brands fa-figma"></i>
+                        <p>FIGMA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script>
         const openMenu = document.querySelector(".openMenu");
