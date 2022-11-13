@@ -111,17 +111,18 @@ nav {
 /* HOME */
 
 section {
-    height: 100vh;
+    height: 100%;
     padding: 0 10%;
 }
 
 .home {
+    height: 100vh;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50vh;
-    padding-bottom: 50vh;
+    /* padding-top: 50vh;
+    padding-bottom: 50vh; */
     position: relative;
 }
 
@@ -197,8 +198,12 @@ section {
 /* ABOUT */
 
 .portfolioBg {
-    background-image: url(../img/WebSite\ bg.png);
-    height: 100%;
+    /* background-image: url(../img/WebSite\ bg.png); */
+    background: rgba(0, 0, 0, 0.6) url(../img/WebSite\ bg.png);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .about {
@@ -206,11 +211,13 @@ section {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    /* height: 100vh; */
+    height: 100%;
+    padding: 10%;
 }
 
 .about_left,
 .about_right {
-    margin: 25% 0 20%;
     height: 500px;
     width: 50%;
 }
@@ -542,6 +549,66 @@ section {
     /* HOME  */
     .home_right,
     .scrollBtn {
+        display: none;
+    }
+    .about {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .about_left,
+    .about_right {
+        height: auto;
+        width: 100%;
+    }
+    .about_right {
+        justify-content: initial;
+        gap: 10px;
+    }
+    .profileContent {
+        height: auto;
+        gap: 30px;
+        text-align: justify;
+    }
+    .profileBtns {
+        /* width: 100%; */
+        /* justify-content: center; */
+        gap: 30px;
+    }
+    .profileBtns button {
+        /* width: auto; */
+        width: 100%;
+    }
+    .profileImg {
+        display: none;
+    }
+    /* Education */
+    /* RIGHT */
+    .educationContent {
+        display: none;
+    }
+    /* LEFT */
+    .carrousel_img {
+        /* width: 80%; */
+        width: 60%;
+    }
+    .dots {
+        margin-top: 10px;
+    }
+    /* SKILLS */
+    /* RIGHT */
+    .skillsContent {
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 20px;
+    }
+    .skillItem {
+        background-color: var(--semiDark);
+    }
+    /* LEFT */
+    .softSkills {
+        width: 100%;
+    }
+    .about_hidden {
         display: none;
     }
 }
