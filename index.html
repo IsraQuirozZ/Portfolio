@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon.ico" />
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- GOOGLE FONTS -->
@@ -61,13 +63,41 @@
 
     <div class="portfolioBg">
         <section class="about" id="about">
+            <!-- LEFT -->
             <div class="about_left">
-                <img class="profileImg about_hidden" src="./img/Personal.png" alt="Me" />
-                <div class="about_left__container">
+                <!-- PROFILE LEFT -->
+                <img class="profileImg" src="./img/Personal.png" alt="Me" />
+                <!-- EDUCATION & SKILLS LEFT -->
+                <div class="about_left__container about_hidden">
+                    <!-- EDUCATION LEFT -->
                     <div class="education_leftContent">
                         <h2>Certificates</h2>
-                        <div class="carrousel">
-                            <img class="carrousel_img" src="./img/prueba certificado.png" alt="" />
+                        <div id="carouselExampleInterval" class="carrusel carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <img class="carrousel_img" src="./img/prueba certificado.png" alt="" />
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img class="carrousel_img" src="./img/prueba certificado.png" alt="" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="carrousel_img" src="./img/prueba certificado.png" alt="" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
                         </div>
                         <div class="dots">
                             <div class="dot"></div>
@@ -75,26 +105,72 @@
                             <div class="dot"></div>
                         </div>
                     </div>
+
+                    <!-- SKILLS LEFT -->
                     <div class="skill_leftContent about_hidden">
                         <h2>Soft <span>Skills</span></h2>
+                        <div class="softSkills">
+                            <div class="progressCard">
+                                <div class="circular-progress proactive">
+                                    <span class="progress-value">100%</span>
+                                </div>
+                                <p>Proactive</p>
+                            </div>
+                            <div class="progressCard">
+                                <div class="circular-progress autodidact">
+                                    <span class="progress-value">100%</span>
+                                </div>
+                                <p>Autodidact</p>
+                            </div>
+                            <div class="progressCard">
+                                <div class="circular-progress communication">
+                                    <span class="progress-value">90%</span>
+                                </div>
+                                <p>Communication</p>
+                            </div>
+                            <div class="progressCard">
+                                <div class="circular-progress creativity">
+                                    <span class="progress-value">85%</span>
+                                </div>
+                                <p>Creativity</p>
+                            </div>
+                            <div class="progressCard">
+                                <div class="circular-progress leadership">
+                                    <span class="progress-value">90%</span>
+                                </div>
+                                <p>Leadership</p>
+                            </div>
+                            <div class="progressCard">
+                                <div class="circular-progress organized">
+                                    <span class="progress-value">80%</span>
+                                </div>
+                                <p>Organized</p>
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <div class="dot"></div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- ABOUT RIGHT -->
             <div class="about_right">
                 <h1>ABOUT ME</h1>
                 <ul>
                     <li>
-                        <a href="#" class="profile">Profile</a>
+                        <a href="#" id="profile" class="profile active">Profile</a>
                     </li>
-                    <li><a href="#" class="education active">Education</a></li>
-                    <li><a href="#" class="skills">Skills</a></li>
+                    <li><a href="#" id="education" class="education">Education</a></li>
+                    <li><a href="#" id="skills" class="skills">Skills</a></li>
                 </ul>
-                <div class="profileContent about_hidden">
+                <!-- PROFILE RIGHT -->
+                <div class="profileContent">
                     <p>
                         I’m a mechatronics engineering student, and a
-                        <span>Front-End Developer</span> with more than a year of experience in the field, I’m currently taking a Fullstack Development bootcamp to lead my developer career to the next level. I'm in constantly learning.
+                        <span>Front-End Developer</span> with more than a year of experience in the field, I’m currently taking a Fullstack Development bootcamp to lead my developer career to the next level. I'm in constantly learning. Student at CoderHouse
+                        🚀
                     </p>
-                    <p>Student at CoderHouse 🚀</p>
                     <p>
                         I'll be happy to help you, if you need anything, please let me know.
                     </p>
@@ -103,7 +179,7 @@
                         <button class="btn">View CV</button>
                     </div>
                 </div>
-
+                <!-- EDUCATION RIGHT -->
                 <div class="educationContent about_hidden">
                     <p>Mechatronic Engineering (2022 - XXXX)</p>
                     <ul>
@@ -121,8 +197,8 @@
                         <li>JavaScript</li>
                     </ul>
                 </div>
-
-                <div class="skillsContent">
+                <!-- SKILLS RIGHT -->
+                <div class="skillsContent about_hidden">
                     <div class="skillItem">
                         <i class="fa-brands fa-html5"></i>
                         <p>HTML</p>
@@ -152,22 +228,10 @@
         </section>
     </div>
 
-    <script>
-        const openMenu = document.querySelector(".openMenu");
-        const closeMenu = document.querySelector(".closeMenu");
-        const menuItems = document.querySelector(".menuItems");
-        openMenu.addEventListener("click", () => {
-            openMenu.classList.toggle("hidden");
-            closeMenu.classList.toggle("visible");
-            menuItems.classList.toggle("visible_nav");
-        });
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-        closeMenu.addEventListener("click", () => {
-            closeMenu.classList.toggle("visible");
-            openMenu.classList.toggle("hidden");
-            menuItems.classList.toggle("visible_nav");
-        });
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
