@@ -49,6 +49,9 @@ const profileLeft = document.querySelector(".profileImg");
 const educationSkills = document.querySelector(".about_left__container");
 const educationLeft = document.querySelector(".education_leftContent");
 const skillsLeft = document.querySelector(".skill_leftContent");
+const educationMarginContainer = document.querySelector(
+    ".about_left__container"
+);
 
 // RIGHT
 const profileRight = document.querySelector(".profileContent");
@@ -68,6 +71,8 @@ education.addEventListener("click", (e) => {
     profileRight.classList.add("about_hidden");
     skillsRight.classList.add("about_hidden");
     educationRight.classList.remove("about_hidden");
+    educationMarginContainer.classList.add("about_left__containerMargin");
+    educationSkills.classList.remove("about_hidden_mobile");
 });
 
 // SKILLS LINK
@@ -83,6 +88,9 @@ skills.addEventListener("click", (e) => {
     profileRight.classList.add("about_hidden");
     educationRight.classList.add("about_hidden");
     skillsRight.classList.remove("about_hidden");
+    educationMarginContainer.classList.remove("about_left__containerMargin");
+    educationSkills.classList.add("about_hidden_mobile");
+    // skillsRight.classList.add("about_left__containerMargin");
 });
 
 // PROFILE LINK

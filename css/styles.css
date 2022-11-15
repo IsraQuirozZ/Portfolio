@@ -236,6 +236,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    justify-content: initial;
 }
 
 .about_right ul {
@@ -551,6 +552,7 @@ section {
     .scrollBtn {
         display: none;
     }
+    /* ABOUT */
     .about {
         flex-direction: column;
         flex-direction: column-reverse;
@@ -562,7 +564,6 @@ section {
         width: 100%;
     }
     .about_right {
-        justify-content: initial;
         gap: 10px;
     }
     .profileContent {
@@ -571,8 +572,6 @@ section {
         text-align: justify;
     }
     .profileBtns {
-        /* width: 100%; */
-        /* justify-content: center; */
         gap: 30px;
     }
     .profileBtns button {
@@ -649,5 +648,53 @@ section {
         width: 60px;
         height: 60px;
         transform: translateX(-50%);
+    }
+    /* ABOUT */
+    .about {
+        /* height: 100vh; */
+        padding: 100px 10%;
+        gap: 30px;
+    }
+    .profileBtns {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+    .profileBtns button {
+        width: 50%;
+    }
+    .profileImg {
+        display: block;
+        width: 200px;
+        height: 320px;
+        margin: 20px auto;
+        /* display: none; */
+    }
+    /* Education */
+    /* LEFT */
+    .about_left__containerMargin {
+        margin: 0 0 200px;
+    }
+    .carrousel_img {
+        width: 100%;
+    }
+    .education_leftContent {
+        justify-content: initial;
+        gap: 10px;
+    }
+    /* SKILLS */
+    /* RIGHT */
+    .skillsContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* .sass,
+    .bootstrap {
+        display: none;
+    } */
+    .about_hidden {
+        display: none;
+    }
+    .about_hidden_mobile {
+        display: none;
     }
 }
