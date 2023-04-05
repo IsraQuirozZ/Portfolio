@@ -1,249 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/favicon.ico" />
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Quicksand&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/6209fab7df.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6209fab7df.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>IsraQuirozZ</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a class="logo1" href="home">
-                <h2>Isra<span>QuirozZ</span></h2>
-            </a>
-            <a class="logo2" href="home">
-                <h2>I<span>QzZ</span></h2>
-            </a>
-            <button class="openMenu">
+      <nav>
+        <a class="logo1" href="#home">
+          <h3>Isra<span>QuirozZ</span></h3>
+        </a>
+        <a class="logo2" href="home">
+          <h2>I<span>QzZ</span></h2>
+        </a>
+        <button id="openMenu">
           <i class="fa-regular fa-bars"></i>
         </button>
-            <button class="closeMenu">
+        <button id="closeMenu">
           <i class="fa-regular fa-xmark"></i>
         </button>
-            <ul class="menuItems">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">CV</a></li>
-            </ul>
-        </nav>
+        <ul class="menuItems">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about ">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="home" id="home">
-        <div class="home_left">
-            <h3>Hello! my name is</h3>
-            <h1>Israel <span>QuirozZ</span></h1>
-            <!-- Animar -->
-            <h2>I'm a Frontend Web Developer</h2>
-            <button class="btn">Contact Me</button>
+      <div class="home-left">
+        <h4>Hello! my name is</h4>
+        <h1>Isra <span>QuirozZ</span></h1>
+        <h3 class="text-type">I'm a Frontend Web Developer!</h3>
+        <div class="home-buttons">
+          <a href="#contact">
+            <button class="btn">Contact Me!</button>
+          </a>
+          <a href="#">
+            <button class="btn">View Cv</button>
+          </a>
         </div>
-        <div class="home_right">
-            <div class="circle">
-                <h2>Create your own reality</h2>
-            </div>
-        </div>
-        <a href="#about"><button class="btn scrollBtn">
-          <i class="fa-solid fa-angles-down"></i></button
-      ></a>
+      </div>
+      <div class="home-right">
+        <img src="img/Developer activity-bro.svg" alt="Web developer width=" 350
+        " height="350 " />
+      </div>
+      <a href="#about " class="scrollBtna">
+        <button class="btn scrollBtn">
+          <i class="fa-solid fa-angles-down"></i>
+        </button>
+      </a>
     </section>
 
-    <div class="portfolioBg">
-        <section class="about" id="about">
-            <!-- LEFT -->
-            <div class="about_left">
-                <!-- PROFILE LEFT -->
-                <img class="profileImg" src="./img/Personal.png" alt="Me" />
-                <!-- EDUCATION & SKILLS LEFT -->
-                <div class="about_left__container about_hidden">
-                    <!-- EDUCATION LEFT -->
-                    <div class="education_leftContent">
-                        <h2>Certificates</h2>
-                        <div id="carouselExampleInterval" class="carrusel carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="10000">
-                                    <img class="carrousel_img" src="./img/prueba certificado.png" alt="" />
-                                </div>
-                                <div class="carousel-item" data-bs-interval="2000">
-                                    <img class="carrousel_img" src="./img/prueba certificado.png" alt="" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="carrousel_img" src="./img/prueba certificado.png" alt="" />
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                        </div>
-                        <div class="dots">
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                        </div>
-                    </div>
+    <!-- ABOUT ME -->
+    <section class="about" id="about">
+      <!-- ABOUT LEFT -->
+      <div class="about-left">
+        <!-- PROFILE LEFT -->
+        <img
+          src="./img/Personal.png "
+          alt="Isra QuirozZ "
+          class="profile-left"
+        />
+        <!-- EDUCATION LEFT -->
+        <div class="education-left hide">
+          <h3>Certificates</h3>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="/img/Certificado Desarrollo Web Inglés.png "
+                  alt="Web Development "
+                />
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev "></div> -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
 
-                    <!-- SKILLS LEFT -->
-                    <div class="skill_leftContent about_hidden">
-                        <h2>Soft <span>Skills</span></h2>
-                        <div class="softSkills">
-                            <div class="progressCard">
-                                <div class="circular-progress proactive">
-                                    <span class="progress-value">100%</span>
-                                </div>
-                                <p>Proactive</p>
-                            </div>
-                            <div class="progressCard">
-                                <div class="circular-progress autodidact">
-                                    <span class="progress-value">100%</span>
-                                </div>
-                                <p>Autodidact</p>
-                            </div>
-                            <div class="progressCard">
-                                <div class="circular-progress organized">
-                                    <span class="progress-value">95%</span>
-                                </div>
-                                <p>Responsible</p>
-                            </div>
-                            <div class="progressCard">
-                                <div class="circular-progress creativity">
-                                    <span class="progress-value">90%</span>
-                                </div>
-                                <p>Creative</p>
-                            </div>
-                            <div class="progressCard">
-                                <div class="circular-progress communication">
-                                    <span class="progress-value">85%</span>
-                                </div>
-                                <p>Communicative</p>
-                            </div>
-                            <div class="progressCard">
-                                <div class="circular-progress leadership">
-                                    <span class="progress-value">85%</span>
-                                </div>
-                                <p>Leadership</p>
-                            </div>
-                            <div class="progressCard">
-                                <div class="circular-progress organized">
-                                    <span class="progress-value">75%</span>
-                                </div>
-                                <p>Teamwork</p>
-                            </div>
-                            <div class="progressCard">
-                                <div class="circular-progress leadership">
-                                    <span class="progress-value">70%</span>
-                                </div>
-                                <p>Organized</p>
-                            </div>
-                        </div>
-                        <div class="dots">
-                            <div class="dot"></div>
-                        </div>
-                    </div>
-                </div>
+        <!-- SKILLS LEFT -->
+        <div class="skills-left hide">
+          <h3>Technical <span>Skills</span></h3>
+          <div class="tech-skills-bars"></div>
+        </div>
+      </div>
+
+      <!-- ABOUT RIGHT -->
+      <div class="about-right">
+        <h2>ABOUT ME</h2>
+
+        <ul class="about-nav">
+          <li id="profile " class="about-link profile about-link-active">
+            Profile
+          </li>
+          <li id="education " class="about-link education">Education</li>
+          <li id="skills " class="about-link skills">Skills</li>
+        </ul>
+        <h4 class="skill-description hide">Some of my finest skills 🚀</h4>
+        <!-- PROFILE RIGHT -->
+        <div class="profile-right">
+          <p>
+            I’m a mechatronics engineering student at the Universidad
+            Politécnica de Madrid and a student at the
+            <span>Fullstack Development</span> career of CoderHouse. I've more
+            than of experience in the field, that's why I currently aspire to
+            get a job in the <span>Web Development</span> world as a
+            <span>Front-End Web Developer</span> to be able to improve my
+            skills, lead my developer career to the next level and to gain
+            experience and new knowledge.
+          </p>
+          <p>I'm in constantly learning! 🚀</p>
+          <p class="profile-bottom">
+            I'll be happy to help you, so if you need anything pleas let me
+            know.
+          </p>
+        </div>
+        <!-- EDUCATION RIGHT -->
+        <div class="education-right hide">
+          <div class="education-container">
+            <h5>UPM-Mechatronic Engineering</h5>
+            <h5>2022-Present</h5>
+          </div>
+          <div class="education-container coder-house" id="coderHouse ">
+            <h5>CoderHouse-Fullstack Dev.</h5>
+            <h5>
+              2022-Present
+
+              <i class="fa-solid fa-chevron-down coderDown"></i>
+            </h5>
+          </div>
+          <div
+            class="education-info coderHouse-info hide"
+            id="coderHouse-info "
+          >
+            <div class="edu-info-location">
+              <i class="fa-solid fa-location-dot"></i>
+              <h6>Madrid, Spain / Argentina</h6>
             </div>
 
-            <!-- ABOUT RIGHT -->
-            <div class="about_right">
-                <h1>ABOUT ME</h1>
+            <ul class="edu-info-description">
+              <li>
+                Fullstack Web Development Career
                 <ul>
-                    <li>
-                        <a href="#" id="profile" class="profile active">Profile</a>
-                    </li>
-                    <li><a href="#" id="education" class="education">Education</a></li>
-                    <li><a href="#" id="skills" class="skills">Skills</a></li>
+                  <li>Web Dev. // JS // ReactJS // Back-End</li>
                 </ul>
-                <!-- PROFILE RIGHT -->
-                <div class="profileContent">
-                    <p>
-                        I’m a mechatronics engineering student, and a
-                        <span>Front-End Developer</span> with more than a year of experience in the field, I’m currently taking a Fullstack Development bootcamp to lead my developer career to the next level. I'm in constantly learning. Student at CoderHouse
-                        🚀
-                    </p>
-                    <p>
-                        I'll be happy to help you, if you need anything, please let me know.
-                    </p>
-                    <div class="profileBtns">
-                        <button class="btn">Get In Touch</button>
-                        <button class="btn">View CV</button>
-                    </div>
-                </div>
-                <!-- EDUCATION RIGHT -->
-                <div class="educationContent about_hidden">
-                    <p>Mechatronic Engineering (2022 - XXXX)</p>
-                    <ul>
-                        <li>UPM - Universidad Politécnica de Madrid</li>
-                    </ul>
-                    <p>CoderHouse</p>
-                    <ul>
-                        <li>Fullstack Web Development career</li>
-                        <li>UI/UX Career</li>
-                        <li>Web Development Course</li>
-                    </ul>
-                    <p>Udemy</p>
-                    <ul>
-                        <li>Web Development Bootcamp</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-                <!-- SKILLS RIGHT -->
-                <div class="skillsContent about_hidden">
-                    <div class="skillItem html">
-                        <i class="fa-brands fa-html5"></i>
-                        <p>HTML</p>
-                    </div>
-                    <div class="skillItem css">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <p>CSS</p>
-                    </div>
-                    <div class="skillItem js">
-                        <i class="fa-brands fa-js"></i>
-                        <p>JAVASCRIPT</p>
-                    </div>
-                    <div class="skillItem bootstrap">
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <p>BOOTSTRAP</p>
-                    </div>
-                    <div class="skillItem sass">
-                        <i class="fa-brands fa-sass"></i>
-                        <p>SASS</p>
-                    </div>
-                    <div class="skillItem figma">
-                        <i class="fa-brands fa-figma"></i>
-                        <p>FIGMA</p>
-                    </div>
-                </div>
+              </li>
+            </ul>
+            <div class="edu-info-technologies">
+              <div class="tool"><h6>HTML</h6></div>
+              <div class="tool"><h6>CSS</h6></div>
+              <div class="tool"><h6>SASS</h6></div>
+              <div class="tool"><h6>BOOTSTRAP</h6></div>
+              <div class="tool"><h6>JAVASCRIPT</h6></div>
+              <div class="tool"><h6>REACT</h6></div>
+              <div class="tool"><h6>NODE JS</h6></div>
+              <div class="tool"><h6>MONGO DB</h6></div>
+              <div class="tool"><h6>EXPRESS JS</h6></div>
             </div>
-        </section>
-    </div>
+          </div>
+          <div class="education-container udemy" id="udemy ">
+            <h5>Udemy-Fullstack Dev.</h5>
+            <h5>
+              2019-2021 <i class="fa-solid fa-chevron-down udemyDown"></i>
+            </h5>
+          </div>
+          <div class="education-info hide udemy-info" id="udemy-info ">
+            <div class="edu-info-location">
+              <i class="fa-solid fa-location-dot"></i>
+              <h6>CDMX, México / Madrid, Spain</h6>
+            </div>
 
-    <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+            <ul class="edu-info-description">
+              <li>The Complete Web Development Bootcamp</li>
+              <li>The Complete JavaScript Course</li>
+            </ul>
+            <div class="edu-info-technologies">
+              <div class="tool"><h6>HTML</h6></div>
+              <div class="tool"><h6>CSS</h6></div>
+              <div class="tool"><h6>GIT // GITHUB</h6></div>
+              <div class="tool"><h6>BOOTSTRAP</h6></div>
+              <div class="tool"><h6>JAVASCRIPT</h6></div>
+              <div class="tool"><h6>REACT</h6></div>
+              <div class="tool"><h6>NODE JS</h6></div>
+              <div class="tool"><h6>MONGO DB</h6></div>
+            </div>
+          </div>
+        </div>
 
-    <script src="./index.js"></script>
-</body>
+        <!-- SKILLS RIGHT -->
+        <div class="skills-right hide">
+          <div class="skill-container">
+            <i class="fa-brands fa-html5 html"></i>
+            <h5>HTML</h5>
+          </div>
+          <div class="skill-container">
+            <i class="fa-brands fa-css3-alt css"></i>
+            <h5>CSS</h5>
+          </div>
+          <div class="skill-container">
+            <i class="fa-brands fa-js js"></i>
+            <h5>JAVASCRIPT</h5>
+          </div>
+          <div class="skill-container">
+            <i class="fa-brands fa-react react"></i>
+            <h5>ReactJS</h5>
+          </div>
+          <div class="skill-container">
+            <i class="fa-brands fa-bootstrap bootstrap"></i>
+            <h5>BOOTSTRAP</h5>
+          </div>
+          <div class="skill-container">
+            <i class="fa-brands fa-figma figma"></i>
+            <h5>FIGMA</h5>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <h2>LATEST PROJECTS</h2>
+      <div class="projects-container">
+        <!-- LUX PROJECT -->
+        <div class="project">
+          <div class="project-cover">
+            <img src="/img/Lux_HomePage.png " alt="Lux E-commerce " />
+            <p>
+              In this web development project I work from wireframe design and
+              mockup design to code implementation, where I test and improve my
+              knowledge of html, css, bootstrap, sass and responsive design, as
+              well as the implementation of good SEO practices and the correct
+              structuration of the page.
+            </p>
+          </div>
+          <div class="project-info">
+            <h5>LUX E-COMMERCE</h5>
+            <div class="edu-info-technologies">
+              <div class="tool"><h6>HTML</h6></div>
+              <div class="tool"><h6>CSS</h6></div>
+              <div class="tool"><h6>BOOTSTRAP</h6></div>
+              <div class="tool"><h6>SASS</h6></div>
+              <div class="tool"><h6>JAVASCRIPT</h6></div>
+            </div>
+          </div>
+          <div class="project-btns">
+            <a
+              href="https://israquirozz.github.io/LUX-Ecommerce/ "
+              target="_blank "
+            >
+              <button class="btn project-btn">Visit Site</button>
+            </a>
+            <a
+              href="https://github.com/IsraQuirozZ/LUX-Ecommerce "
+              target="_blank "
+            >
+              <button class="btn project-btn">Repo</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- TATTOO SITE PROJECT -->
+        <div class="project">
+          <div class="project-cover">
+            <img src="/img/ToDoList.png " alt="Tattoo WebSite " />
+            <p>
+              It is a small tattoo-themed page, where I was able to implement my
+              knowledge of html, css, use of libraries and the implementation of
+              javascript code to make the page work and dynamism.
+            </p>
+          </div>
+          <div class="project-info">
+            <h5>TATUIZ E-COMMERCE</h5>
+            <div class="edu-info-technologies">
+              <div class="tool"><h6>HTML</h6></div>
+              <div class="tool"><h6>CSS</h6></div>
+              <div class="tool"><h6>JAVASCRIPT</h6></div>
+              <div class="tool"><h6>SWIPER</h6></div>
+              <div class="tool"><h6>SWEET ALERT</h6></div>
+            </div>
+          </div>
+          <div class="project-btns">
+            <a
+              href="https://israquirozz.github.io/Proyecto-Final-JS/ "
+              target="_blank "
+            >
+              <button class="btn project-btn">Visit Site</button>
+            </a>
+            <a
+              href="https://github.com/IsraQuirozZ/Proyecto-Final-JS "
+              target="_blank "
+            >
+              <button class="btn project-btn">Repo</button>
+            </a>
+          </div>
+        </div>
+        <!-- PROJECT -->
+        <div class="project">
+          <div class="project-cover">
+            <img src="/img/Lux_HomePage.png " alt="Lux E-commerce " />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              nisi nesciunt minus ipsa dicta, voluptatum dolore saepe atque
+              maxime omnis nam ad cum facilis vitae debitis vero veniam
+              recusandae voluptas!
+            </p>
+          </div>
+          <div class="project-info">
+            <h5>LUX E-COMMERCE</h5>
+            <div class="edu-info-technologies">
+              <div class="tool"><h6>HTML</h6></div>
+              <div class="tool"><h6>CSS</h6></div>
+              <div class="tool"><h6>BOOTSTRAP</h6></div>
+              <div class="tool"><h6>SASS</h6></div>
+              <div class="tool"><h6>JAVASCRIPT</h6></div>
+            </div>
+          </div>
+          <div class="project-btns">
+            <a
+              href="https://israquirozz.github.io/LUX-Ecommerce/ "
+              target="_blank "
+            >
+              <button class="btn project-btn">Visit Site</button>
+            </a>
+            <a
+              href="https://github.com/IsraQuirozZ/LUX-Ecommerce "
+              target="_blank "
+            >
+              <button class="btn project-btn">Repo</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="# ">
+        <button class="btn all-projects-btn">See all</button>
+      </a>
+    </section>
+
+    <section class="contact bg" id="contact">
+      <h2>GET IN TOUCH</h2>
+      <div class="contact-container">
+        <div class="social-media">
+          <h3>Social <span>Media</span></h3>
+          <a class="app" href="https://github.com/IsraQuirozZ" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <h4>GitHub</h4>
+          </a>
+          <a
+            class="app"
+            href="https://www.linkedin.com/in/israel-quiroz-de-zaldo-763192203"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <h4>LinkedIn</h4>
+          </a>
+          <a
+            class="app"
+            href="https://wa.me/624677627?text=I'm%20interested%20in%20your%20work"
+            target="_blank"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            <h4>WhatsApp</h4>
+          </a>
+          <a
+            class="app"
+            href="https://www.instagram.com/isra_quirozz/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <h4>Instagram</h4>
+          </a>
+        </div>
+        <div class="send-message">
+          <h3>Send <span>Message</span></h3>
+          <form action=" " class="contact-form" id="contactForm ">
+            <div class="name-input">
+              <input
+                class="name"
+                type="text "
+                name="fName "
+                id="fName-input "
+                placeholder="First Name "
+              />
+              <label for="lName "></label>
+              <input
+                class="name"
+                type="text "
+                name="lName "
+                id="lName-input "
+                placeholder="Last Name "
+              />
+            </div>
+            <label for="email ">Email</label>
+            <input
+              class="email"
+              type="email "
+              name="email "
+              id="email-input "
+              placeholder="email@example.com "
+            />
+            <label for="message ">Type your message...</label>
+            <input type="textarea " name="message " id="message-input " />
+            <div class="bottom-form">
+              <input class="submit-form btn" type="submit " value="Submit! " />
+              <i class="fa-solid fa-trash" id="delete-message "></i>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bubbles">
+        <div class="bubble" style="--i: 11"></div>
+        <div class="bubble" style="--i: 12"></div>
+        <div class="bubble" style="--i: 24"></div>
+        <div class="bubble" style="--i: 10"></div>
+        <div class="bubble" style="--i: 14"></div>
+        <div class="bubble" style="--i: 23"></div>
+        <div class="bubble" style="--i: 18"></div>
+        <div class="bubble" style="--i: 16"></div>
+        <div class="bubble" style="--i: 19"></div>
+        <div class="bubble" style="--i: 20"></div>
+        <div class="bubble" style="--i: 22"></div>
+        <div class="bubble" style="--i: 25"></div>
+        <div class="bubble" style="--i: 18"></div>
+        <div class="bubble" style="--i: 21"></div>
+        <div class="bubble" style="--i: 15"></div>
+        <div class="bubble" style="--i: 13"></div>
+        <div class="bubble" style="--i: 26"></div>
+        <div class="bubble" style="--i: 17"></div>
+        <div class="bubble" style="--i: 13"></div>
+        <div class="bubble" style="--i: 28"></div>
+        <div class="bubble" style="--i: 11"></div>
+        <div class="bubble" style="--i: 12"></div>
+        <div class="bubble" style="--i: 24"></div>
+        <div class="bubble" style="--i: 10"></div>
+        <div class="bubble" style="--i: 14"></div>
+        <div class="bubble" style="--i: 23"></div>
+        <div class="bubble" style="--i: 18"></div>
+        <div class="bubble" style="--i: 16"></div>
+        <div class="bubble" style="--i: 19"></div>
+        <div class="bubble" style="--i: 20"></div>
+        <div class="bubble" style="--i: 22"></div>
+        <div class="bubble" style="--i: 25"></div>
+        <div class="bubble" style="--i: 18"></div>
+        <div class="bubble" style="--i: 21"></div>
+        <div class="bubble" style="--i: 15"></div>
+        <div class="bubble" style="--i: 13"></div>
+        <div class="bubble" style="--i: 26"></div>
+        <div class="bubble" style="--i: 17"></div>
+        <div class="bubble" style="--i: 13"></div>
+        <div class="bubble" style="--i: 28"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="division"></div>
+      <p>Copyright © | Designed and Coded by Isra <span>QuirozZ</span>⚡</p>
+      <p>2022-2023</p>
+    </footer>
+
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
+    <script src="index.js "></script>
+  </body>
 </html>
