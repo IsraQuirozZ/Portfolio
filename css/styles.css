@@ -25,6 +25,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: rgba(0, 0, 0, 0.3) url("../img/WebSite\ bg.png");
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 body::-webkit-scrollbar {
   /* overflow: hidden; Hide scrollbars */
   display: none;
@@ -67,7 +75,11 @@ p {
   font-size: 20px;
 }
 
-a,
+a {
+  font-size: 20px;
+  font-size: 18px;
+}
+
 li {
   font-size: 20px;
 }
@@ -97,14 +109,6 @@ a:hover {
   border: 4px solid white;
   box-shadow: 0 0 5px var(--colorP), 0 0 25px var(--colorP),
     0 0 50px var(--colorP), 0 0 200px var(--colorP);
-}
-
-body {
-  background: rgba(0, 0, 0, 0.3) url("../img/WebSite\ bg.png");
-  background-blend-mode: darken;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 /* NAVBAR */
@@ -594,6 +598,7 @@ section {
 .project:hover p {
   z-index: 2;
   backdrop-filter: blur(2px);
+  cursor: default;
 }
 
 .project-info {
