@@ -14,7 +14,7 @@
   --colorP: #32e0c4;
   --colorS: #c4acd1;
   --colorT: #7c33da;
-  --darkOne: rgba(0, 0, 0, 0.9);
+  --darkOne: rgba(0, 0, 0, 0.85);
   --darkTwo: rgba(0, 0, 0, 0.8);
   --darkThree: rgba(0, 0, 0, 0.3);
   --light: rgba(255, 255, 255, 0.3);
@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -66,20 +66,10 @@ h5 {
 
 h6 {
   font-size: 15px;
-  /* font-weight: bold; */
-  /* color: gray; */
   font-weight: lighter;
 }
 
-p {
-  font-size: 20px;
-}
-
-a {
-  font-size: 20px;
-  font-size: 18px;
-}
-
+p,
 li {
   font-size: 20px;
 }
@@ -129,6 +119,16 @@ nav {
   height: 60px;
 }
 
+.navLink {
+  font-size: 18px;
+}
+
+.active {
+  color: var(--colorP);
+  text-decoration: underline var(--colorP) 0.1rem;
+  text-underline-offset: 0.5rem;
+}
+
 .logo1 h3 {
   font-weight: lighter;
 }
@@ -160,7 +160,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .home-left {
@@ -203,6 +203,7 @@ section {
 .scrollBtna {
   position: absolute;
   bottom: 50px;
+  top: 85vh;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -217,8 +218,9 @@ section {
 
 .about {
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 20px;
-  align-items: center;
+  /* height: auto; */
 }
 
 .about-left,
@@ -238,6 +240,12 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /* justify-content: space-between; */
+}
+
+.about-right h4 {
+  font-weight: lighter;
+  font-size: 25px;
 }
 
 .about-nav {
@@ -293,7 +301,7 @@ section {
 
 .education-left,
 .skills-left {
-  width: 100%;
+  width: 500px;
   height: 100%;
   background-color: var(--darkTwo);
   border-radius: 20px;
@@ -366,11 +374,13 @@ section {
 }
 
 .education-container:hover {
-  background-color: var(--darkOne);
+  box-shadow: 0 0 5px var(--colorP), 0 0 20px var(--colorP),
+    0 0 20px var(--colorP), 0 0 5px var(--colorP);
 }
 
 .fa-chevron-down,
 .fa-chevron-up {
+  margin-left: 10px;
   color: var(--colorP);
 }
 
@@ -491,6 +501,13 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  /* height: 100%; */
+  /* justify-content: space-between; */
+}
+
+.skills-right h5 {
+  color: white;
+  letter-spacing: 1px;
 }
 
 .skill-container {
@@ -543,23 +560,23 @@ section {
 
 .projects {
   text-align: center;
-  padding: 70px 40px 0;
+  padding: 80px 40px 0px;
   height: auto;
 }
 
 .projects-container {
-  margin-top: 30px;
-  display: grid;
-  gap: 20px;
-  grid-auto-rows: 430px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  /* width: 380px; */
-  height: 430px;
+  width: 350px;
   gap: 20px;
   background-color: var(--darkThree);
   border-radius: 20px;
@@ -568,7 +585,7 @@ section {
 
 .project-cover {
   position: relative;
-  height: 175px;
+  height: 180px;
   width: 100%;
 }
 
@@ -604,10 +621,11 @@ section {
 .project-info {
   text-align: left;
   padding: 0 20px;
-  height: 139px;
+  cursor: default;
 }
 
 .project-btns {
+  margin: 10px 0 20px;
   padding: 0 20px;
   display: flex;
   gap: 20px;
@@ -619,11 +637,14 @@ section {
 
 .project-btn {
   width: 100%;
+  font-size: 20px;
 }
 
 .all-projects-btn {
-  margin: 30px 0;
+  margin: 25px 0 40px;
 }
+
+/* CONTACT */
 
 .contact {
   position: relative;
@@ -780,11 +801,6 @@ label {
 .skills-left:hover {
   box-shadow: 0 0 5px var(--colorS), 0 0 20px var(--colorS),
     0 0 20px var(--colorS), 0 0 5px var(--colorS);
-}
-
-.education-container:hover {
-  box-shadow: 0 0 5px var(--colorP), 0 0 20px var(--colorP),
-    0 0 20px var(--colorP), 0 0 5px var(--colorP);
 }
 
 /* FOOTER */

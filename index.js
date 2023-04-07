@@ -15,6 +15,26 @@
 //     menuItems.classList.toggle("visible_nav");
 // });
 
+// NAVBAR
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".navLink");
+
+window.addEventListener("scroll", () => {
+  let currentSection = "home";
+  sections.forEach((section) => {
+    if (window.scrollY >= section.offsetTop - 100) {
+      currentSection = section.id;
+    }
+  });
+  navLinks.forEach((link) => {
+    if (link.href.includes(currentSection)) {
+      document.querySelector(".active").classList.remove("active");
+      link.classList.add("active");
+    }
+  });
+});
+
 // ABOUT ME
 const aboutLinks = document.querySelectorAll(".about-link");
 const profileLink = document.querySelector(".profile");
@@ -102,16 +122,16 @@ const skills = [
     percentage: 80,
   },
   {
+    skill: "REACTJS",
+    percentage: 70,
+  },
+  {
     skill: "FIGMA",
     percentage: 60,
   },
   {
     skill: "PYTHON",
     percentage: 80,
-  },
-  {
-    skill: "REACT",
-    percentage: 70,
   },
   {
     skill: "NODEJS",
@@ -157,3 +177,52 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// FORM
+const contactForm = document.getElementById("contactForm");
+const inputName = document.querySelector("#fName-input");
+const inputLastName = document.querySelector("#lName-input");
+const inputEmail = document.querySelector("#email-input");
+const inputTextarea = document.querySelector("#message-input");
+const inputSubmit = document.querySelector("#submitForm");
+//Delete button
+const deleteForm = document.querySelector("#delete-message");
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  inputSubmit.value = "Sending...";
+  if (
+    !inputName.value ||
+    !inputLastName.value ||
+    !inputEmail.value ||
+    !inputTextarea.value
+  ) {
+    swal("UPS!", "Please fill the form...", "error");
+    inputSubmit.value = "Send!";
+  } else if (
+    inputName.value.length < 3 ||
+    inputLastName.value.length < 3 ||
+    inputEmail.value.length < 18 ||
+    inputTextarea.value.length < 5
+  ) {
+    swal("UPS!", "Check your info...", "warning");
+    inputSubmit.value = "Send!";
+  } else {
+    emailjs.sendForm("service_xtlzrle", "template_3nbbw8a", contactForm).then(
+      () => {
+        inputSubmit.value = "Send!";
+        swal("SENT!", "I will contact you as soon as possible", "success");
+        contactForm.reset();
+      },
+      (err) => {
+        inputSubmit.value = "Send!";
+        swal("UPS!", "Something went wrong!", "error");
+      }
+    );
+  }
+});
+
+deleteForm.onclick = () => {
+  inputSubmit.value = "Send!";
+  contactForm.reset();
+};
