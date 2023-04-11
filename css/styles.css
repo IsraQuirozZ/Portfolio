@@ -382,14 +382,11 @@ section {
 .fa-chevron-up {
   margin-left: 10px;
   color: var(--colorP);
+  transition: 0.3s all;
 }
 
-.coderUp {
-  display: none;
-}
-
-.coderUp {
-  display: none;
+.arrowRotation {
+  transform: rotate(180deg);
 }
 
 .education-info {
@@ -486,7 +483,7 @@ section {
   width: 60%;
 }
 
-.react-bar {
+.reactjs-bar {
   width: 70%;
 }
 
@@ -821,4 +818,69 @@ label {
 
 .hide {
   display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  /* NAVBAR */
+
+  header {
+    width: 100%;
+    position: fixed;
+    background-color: var(--darkOne);
+    z-index: 999;
+    backdrop-filter: blur(7px);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    height: 60px;
+  }
+
+  .logo1 {
+    display: none;
+  }
+
+  .logo2,
+  #openMenu,
+  #closeMenu {
+    display: block;
+  }
+
+  .navLink {
+    font-size: 18px;
+  }
+
+  .active {
+    color: var(--colorP);
+    text-decoration: underline var(--colorP) 0.1rem;
+    text-underline-offset: 0.5rem;
+  }
+
+  /* .logo1 h3 {
+    font-weight: lighter;
+  } */
+
+  .menuItems {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* .logo2,
+  #openMenu,
+  #closeMenu {
+    display: none;
+  } */
+
+  /* HOME */
+}
+
+/* MOBILE */
+@media (min-width: 768px) {
 }

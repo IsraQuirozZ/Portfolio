@@ -93,17 +93,22 @@ skillsLink.onclick = () => {
 };
 
 // EDUCATION
+// Agregar animación a coderHouseInfo y a udemyInfo cuando aparezca.
 const coderHouse = document.querySelector(".coder-house");
 const coderHouseInfo = document.querySelector(".coderHouse-info");
+const coderArrow = document.querySelector(".coderDown");
 const udemy = document.querySelector(".udemy");
 const udemyInfo = document.querySelector(".udemy-info");
+const udemyArrow = document.querySelector(".udemyDown");
 
 coderHouse.addEventListener("click", () => {
   coderHouseInfo.classList.toggle("hide");
+  coderArrow.classList.toggle("arrowRotation");
   udemyInfo.classList.add("hide");
 });
 udemy.addEventListener("click", () => {
   udemyInfo.classList.toggle("hide");
+  udemyArrow.classList.toggle("arrowRotation");
   coderHouseInfo.classList.add("hide");
 });
 
