@@ -35,6 +35,23 @@ window.addEventListener("scroll", () => {
   });
 });
 
+const openMenuBtn = document.querySelector(".openMenu");
+const closeMenuBtn = document.querySelector(".closeMenu");
+const menuItems = document.querySelector(".menuItems");
+
+openMenuBtn.addEventListener("click", () => {
+  console.log("open");
+  openMenuBtn.classList.toggle("menuBtn");
+  closeMenuBtn.classList.toggle("menuBtn");
+  menuItems.classList.add("visible");
+});
+closeMenuBtn.addEventListener("click", () => {
+  console.log("close");
+  openMenuBtn.classList.toggle("menuBtn");
+  closeMenuBtn.classList.toggle("menuBtn");
+  menuItems.classList.remove("visible");
+});
+
 // ABOUT ME
 const aboutLinks = document.querySelectorAll(".about-link");
 const profileLink = document.querySelector(".profile");
