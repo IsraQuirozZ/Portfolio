@@ -103,21 +103,21 @@
           <!-- Swiper -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <img
-                class="swiper-slide"
-                src="./img/Certificado Desarrollo Web Inglés.png "
-                alt="Web Development"
-              />
-              <img
-                class="swiper-slide"
-                src="./img/Certificado JS Inglés.png "
-                alt="Web Development"
-              />
-              <img
-                class="swiper-slide"
-                src="./img/Certificado ReactJS Inglés.png"
-                alt="Web Development"
-              />
+              <a href="" target="_blank" class="swiper-slide">
+                <img
+                  src="./img/Certificado Desarrollo Web Inglés.png "
+                  alt="Web Development"
+                />
+              </a>
+              <a href="" target="_blank" class="swiper-slide">
+                <img src="./img/Certificado JS Inglés.png " alt="JavaScript" />
+              </a>
+              <a href="" target="_blank" class="swiper-slide">
+                <img
+                  src="./img/Certificado ReactJS Inglés.png"
+                  alt="React JS"
+                />
+              </a>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -170,14 +170,14 @@
         <div class="education-right hide">
           <div class="education-container">
             <h5>UPM-Mechatronic Engineering</h5>
-            <h5>2022-Present</h5>
+            <h5 class="edu-date">2022-Present</h5>
           </div>
           <div class="education-container coder-house" id="coderHouse ">
             <h5>CoderHouse-Fullstack Dev.</h5>
-            <h5>
-              2022-Present
+            <div class="education-date">
+              <h5 class="edu-date">2022-Present</h5>
               <i class="fa-solid fa-chevron-down coderDown"></i>
-            </h5>
+            </div>
           </div>
           <div class="education-info coderHouse-info hide" id="coderHouse-info">
             <div class="edu-info-location">
@@ -203,9 +203,10 @@
           </div>
           <div class="education-container udemy" id="udemy ">
             <h5>Udemy-Fullstack Dev.</h5>
-            <h5>
-              2019-2021 <i class="fa-solid fa-chevron-down udemyDown"></i>
-            </h5>
+            <div class="education-date">
+              <h5 class="edu-date">2019-2021</h5>
+              <i class="fa-solid fa-chevron-down udemyDown"></i>
+            </div>
           </div>
           <div class="education-info hide udemy-info" id="udemy-info ">
             <div class="edu-info-location">

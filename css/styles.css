@@ -218,9 +218,7 @@ section {
 
 .about {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 20px;
-  /* height: auto; */
 }
 
 .about-left,
@@ -267,9 +265,7 @@ section {
 }
 
 /* PROFILE */
-
 /* LEFT */
-
 .profile-left {
   height: 450px;
   border: 5px solid white;
@@ -278,7 +274,6 @@ section {
 }
 
 /* RIGHT */
-
 .profile-right {
   display: flex;
   flex-direction: column;
@@ -295,9 +290,7 @@ section {
 }
 
 /* EDUCATION */
-
 /* EDUCATION LEFT */
-
 .education-left,
 .skills-left {
   width: 500px;
@@ -346,12 +339,7 @@ section {
   object-fit: contain;
 }
 
-.swiper-pagination {
-  bottom: 0;
-}
-
 /* EDUCATION RIGHT */
-
 .education-right {
   height: 100%;
   display: flex;
@@ -368,6 +356,7 @@ section {
 }
 
 .education-container {
+  align-items: center;
   padding: 10px;
   cursor: pointer;
 }
@@ -377,8 +366,15 @@ section {
     0 0 20px var(--colorP), 0 0 5px var(--colorP);
 }
 
+.education-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .fa-chevron-down,
 .fa-chevron-up {
+  font-size: 20px;
   margin-left: 10px;
   color: var(--colorP);
   transition: 0.3s all;
@@ -427,9 +423,7 @@ section {
 }
 
 /* SKILLS */
-
 /* SKILLS LEFT  */
-
 .tech-skills-bars {
   display: flex;
   flex-direction: column;
@@ -492,19 +486,12 @@ section {
 }
 
 /* SKILLS RIGHT */
-
 .skills-right {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   gap: 20px;
-}
-
-.skill-description {
-  /* overflow: hidden; */
-  /* white-space: nowrap; */
-  /* text-overflow: ellipsis; */
 }
 
 .skills-right h5 {
@@ -522,7 +509,6 @@ section {
   height: 150px;
   width: 150px;
   background-color: var(--darkTwo);
-  /* background-color: var(--darkTwo); */
   border-radius: 20px;
 }
 
@@ -955,7 +941,102 @@ label {
 
   /* ABOUT */
   .about {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-right {
+    margin-top: 20px;
+  }
+
+  .about-nav {
+    gap: 25px;
+  }
+
+  .about-link-active,
+  .about-nav li:hover {
+    border-radius: 1px;
+  }
+
+  .about-right h4 {
+    font-size: 20px;
+  }
+
+  /* PROFILE */
+  /* LEFT */
+  .profile-left {
+    height: 370px;
+  }
+
+  /* RIGHT */
+  .profile-right {
+    gap: 20px;
+  }
+
+  /* EDUCATION */
+  /* EDUCATION LEFT */
+  .education-left,
+  .skills-left {
+    width: 100%;
+    gap: 15px;
+    padding: 25px;
+  }
+
+  /* EDUCATION RIGHT */
+  .edu-date {
     display: none;
+  }
+
+  .education-info {
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+    gap: 10px;
+  }
+
+  .edu-info-location {
+    gap: 10px;
+  }
+
+  .edu-info-description li {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  .tool {
+    padding: 5px 12px;
+  }
+
+  /* SKILLS */
+  /* SKILLS LEFT  */
+  .skills-left {
+    display: none;
+  }
+
+  /* SKILLS RIGHT */
+  .skills-right {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .skills-right h5 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .skill-container {
+    height: 130px;
+    width: 130px;
+  }
+
+  .skill-container i {
+    font-size: 75px;
   }
 
   /* CONTACT */

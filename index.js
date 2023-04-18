@@ -1,22 +1,4 @@
 // NAVBAR
-// const openMenu = document.querySelector(".openMenu");
-// const closeMenu = document.querySelector(".closeMenu");
-// const menuItems = document.querySelector(".menuItems");
-
-// openMenu.addEventListener("click", () => {
-//     openMenu.classList.toggle("hidden");
-//     closeMenu.classList.toggle("visible");
-//     menuItems.classList.toggle("visible_nav");
-// });
-
-// closeMenu.addEventListener("click", () => {
-//     closeMenu.classList.toggle("visible");
-//     openMenu.classList.toggle("hidden");
-//     menuItems.classList.toggle("visible_nav");
-// });
-
-// NAVBAR
-
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navLink");
 
