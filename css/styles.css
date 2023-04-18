@@ -827,6 +827,8 @@ label {
   }
 
   .home-left {
+    /* position: absolute;
+    top: 20%; */
     width: 494px;
   }
 
@@ -873,7 +875,7 @@ label {
   .closeMenu {
     border: none;
     background-color: inherit;
-    font-size: 25px;
+    font-size: 35px;
     color: white;
     cursor: pointer;
   }
@@ -914,6 +916,7 @@ label {
     padding: 0 10%;
     justify-content: center;
     text-align: center;
+    position: relative;
   }
 
   .home-right {
@@ -921,6 +924,8 @@ label {
   }
 
   .home-left {
+    position: absolute;
+    top: 25%;
     width: 100%;
     overflow-wrap: break-word;
   }
@@ -937,6 +942,9 @@ label {
 
   .scrollBtn {
     width: 60px;
+  }
+  .scrollBtna {
+    top: 75%;
   }
 
   /* ABOUT */
