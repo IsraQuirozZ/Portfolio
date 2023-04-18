@@ -240,7 +240,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* justify-content: space-between; */
 }
 
 .about-right h4 {
@@ -867,8 +866,16 @@ label {
     font-size: 25px;
   }
 
-  /* NAVBAR */
+  .btn {
+    font-size: 20px;
+    width: 140px;
+  }
 
+  /* NAVBAR */
+  header {
+    background-color: rgba(0, 0, 0, 0.97);
+    backdrop-filter: none;
+  }
   .logo1 {
     display: none;
   }
@@ -895,30 +902,70 @@ label {
     position: fixed;
     left: 100%;
     top: 59px;
-    width: 50%;
+    width: 55%;
     background-color: var(--darkOne);
     height: 100vh;
-    justify-content: space-evenly;
-    overflow-y: auto;
+    justify-content: start;
+    gap: 60px;
     transition: left 0.3s;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
+  }
+
+  .menuItems li:first-of-type {
+    margin-top: 50px;
   }
 
   .visible {
-    left: 50%;
+    left: 45%;
   }
   .menuBtn {
     display: block;
+  }
+
+  /* HOME */
+
+  .home {
+    padding: 0 10%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home-right {
+    display: none;
+  }
+
+  .home-left {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .text-type {
+    white-space: inherit;
+    width: 100%;
+    overflow: inherit;
+    animation: none;
+    border: none;
+    color: honeydew;
+    /* color: ghostwhite; */
+  }
+
+  .scrollBtn {
+    width: 60px;
   }
 
   /* ABOUT */
   .about {
     display: none;
   }
+
+  /* CONTACT */
+
+  .contact {
+    display: none;
+  }
 }
 
 /* HIDE ABOUT */
-
 .hide {
-  display: block;
+  display: none;
 }
