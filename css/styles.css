@@ -633,7 +633,6 @@ section {
 }
 
 /* CONTACT */
-
 .contact {
   position: relative;
   width: 100%;
@@ -937,7 +936,6 @@ label {
     animation: none;
     border: none;
     color: honeydew;
-    /* color: ghostwhite; */
   }
 
   .scrollBtn {
@@ -1031,6 +1029,7 @@ label {
   .skills-right {
     justify-content: center;
     gap: 15px;
+    overflow: visible;
   }
 
   .skills-right h5 {
@@ -1047,10 +1046,116 @@ label {
     font-size: 75px;
   }
 
-  /* CONTACT */
+  /* PROJECTS */
+  .projects-container {
+    gap: 40px;
+  }
 
+  /* CONTACT */
   .contact {
-    display: none;
+    padding: 70px 10% 50px;
+    height: auto;
+  }
+
+  .contact-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .social-media,
+  .send-message {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--light);
+    background-color: var(--darkThree);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+    box-shadow: -3px 3px 5px rgba(209, 193, 193, 0.301);
+  }
+
+  .social-media {
+    width: 100%;
+  }
+
+  .send-message {
+    width: 100%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .name-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .name {
+    width: 50%;
+  }
+
+  input {
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2.5px solid var(--colorS);
+    /* margin-bottom: 20px; */
+    outline: 0;
+    color: white;
+    font-size: 17px;
+  }
+
+  input::placeholder,
+  label {
+    color: var(--colorS);
+    font-size: 17px;
+  }
+
+  .email::placeholder {
+    color: gray;
+  }
+
+  .bottom-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .fa-trash {
+    font-size: 30px;
+  }
+
+  .fa-trash:hover {
+    text-shadow: 0 0 10px var(--colorP);
+    cursor: pointer;
+  }
+
+  .app {
+    display: flex;
+    gap: 30px;
+  }
+
+  .app:hover h4,
+  .app:hover i {
+    /* color: var(--colorS); */
+    text-shadow: 0 0 10px var(--colorP);
+  }
+
+  .app i {
+    font-size: 40px;
+  }
+
+  .app h4 {
+    color: white;
   }
 }
 
