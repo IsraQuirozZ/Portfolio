@@ -815,7 +815,6 @@ label {
   }
 
   /* HOME */
-
   .home {
     padding: 0 0;
     justify-content: center;
@@ -836,6 +835,102 @@ label {
   }
 
   /* ABOUT  */
+  .about {
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+  }
+  .about-left,
+  .about-right {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .about-right {
+    margin-top: 20px;
+  }
+
+  .about-nav {
+    gap: 25px;
+  }
+
+  .about-link-active,
+  .about-nav li:hover {
+    border-radius: 1px;
+  }
+
+  .about-right h4 {
+    font-size: 20px;
+  }
+
+  /* PROFILE */
+  /* LEFT */
+  .profile-left {
+    height: 370px;
+  }
+
+  /* RIGHT */
+  .profile-right {
+    gap: 20px;
+  }
+
+  /* EDUCATION */
+  /* EDUCATION LEFT */
+  .education-left {
+    width: 100%;
+    gap: 15px;
+    padding: 25px;
+  }
+
+  /* EDUCATION RIGHT */
+  .education-info {
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+    gap: 10px;
+  }
+
+  .edu-info-location {
+    gap: 10px;
+  }
+
+  .edu-info-description li {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  .tool {
+    padding: 5px 12px;
+  }
+
+  /* SKILLS */
+  /* SKILLS LEFT  */
+  .skills-left {
+    display: none;
+  }
+
+  /* SKILLS RIGHT */
+  .skills-right {
+    justify-content: center;
+    gap: 15px;
+    overflow: visible;
+  }
+
+  .skills-right h5 {
+    font-size: 18px;
+  }
+
+  .skill-container {
+    height: 130px;
+    width: 130px;
+  }
+
+  .skill-container i {
+    font-size: 75px;
+  }
+
+  /* CONTACT */
 }
 
 /* MOBILE */
@@ -944,57 +1039,9 @@ label {
   }
 
   /* ABOUT */
-  .about {
-    flex-direction: column-reverse;
-    height: auto;
-  }
-
   .about-left,
   .about-right {
     width: 100%;
-    height: auto;
-  }
-
-  .about-right {
-    margin-top: 20px;
-  }
-
-  .about-nav {
-    gap: 25px;
-  }
-
-  .about-link-active,
-  .about-nav li:hover {
-    border-radius: 1px;
-  }
-
-  .about-right h4 {
-    font-size: 20px;
-  }
-
-  /* PROFILE */
-  /* LEFT */
-  .profile-left {
-    height: 370px;
-  }
-
-  /* RIGHT */
-  .profile-right {
-    gap: 20px;
-  }
-
-  /* EDUCATION */
-  /* EDUCATION LEFT */
-  .education-left,
-  .skills-left {
-    width: 100%;
-    gap: 15px;
-    padding: 25px;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
   }
 
   /* EDUCATION RIGHT */
@@ -1002,51 +1049,8 @@ label {
     display: none;
   }
 
-  .education-info {
-    flex-direction: column;
-    padding: 20px;
-    height: 100%;
-    gap: 10px;
-  }
-
-  .edu-info-location {
-    gap: 10px;
-  }
-
-  .edu-info-description li {
-    font-size: 18px;
-    padding-left: 10px;
-  }
-
-  .tool {
-    padding: 5px 12px;
-  }
-
-  /* SKILLS */
-  /* SKILLS LEFT  */
-  .skills-left {
-    display: none;
-  }
-
-  /* SKILLS RIGHT */
-  .skills-right {
-    justify-content: center;
-    gap: 15px;
-    overflow: visible;
-  }
-
   .skills-right h5 {
-    font-size: 18px;
     font-weight: 300;
-  }
-
-  .skill-container {
-    height: 130px;
-    width: 130px;
-  }
-
-  .skill-container i {
-    font-size: 75px;
   }
 
   /* PROJECTS */
