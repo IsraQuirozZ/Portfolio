@@ -931,6 +931,9 @@ label {
   }
 
   /* CONTACT */
+  .contact {
+    padding: 100px 10% 0;
+  }
 }
 
 /* MOBILE */
