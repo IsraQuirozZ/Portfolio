@@ -20,18 +20,24 @@ window.addEventListener("scroll", () => {
 const openMenuBtn = document.querySelector(".openMenu");
 const closeMenuBtn = document.querySelector(".closeMenu");
 const menuItems = document.querySelector(".menuItems");
+const pageSections = document.querySelectorAll("section");
 
 openMenuBtn.addEventListener("click", () => {
-  console.log("open");
   openMenuBtn.classList.toggle("menuBtn");
   closeMenuBtn.classList.toggle("menuBtn");
   menuItems.classList.add("visible");
 });
 closeMenuBtn.addEventListener("click", () => {
-  console.log("close");
   openMenuBtn.classList.toggle("menuBtn");
   closeMenuBtn.classList.toggle("menuBtn");
   menuItems.classList.remove("visible");
+});
+pageSections.forEach((section) => {
+  section.addEventListener("click", () => {
+    openMenuBtn.classList.add("menuBtn");
+    closeMenuBtn.classList.remove("menuBtn");
+    menuItems.classList.remove("visible");
+  });
 });
 
 // ABOUT ME
@@ -92,7 +98,6 @@ skillsLink.onclick = () => {
 };
 
 // EDUCATION
-// Agregar animación a coderHouseInfo y a udemyInfo cuando aparezca.
 const coderHouse = document.querySelector(".coder-house");
 const coderHouseInfo = document.querySelector(".coderHouse-info");
 const coderArrow = document.querySelector(".coderDown");
